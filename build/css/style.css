@@ -170,7 +170,7 @@ body {
 }
 .banner {
   padding: 100px 0;
-  height: 100vh;
+  height: 80vh;
   width: 100%
 }
 .banner__content {
@@ -237,7 +237,8 @@ body {
 }
 .banner__form-wrapper {
   padding: 30px 10px;
-  background-color: #105bb09a
+  background-color: #105bb0b7;
+  border: 1px solid #104077
 }
 .form__title {
   text-align: center;
@@ -258,7 +259,8 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column
+  flex-direction: column;
+  margin-bottom: 30px
 }
 .banner__form label {
   color: #fff;
@@ -266,6 +268,7 @@ body {
   font-size: 16px
 }
 .banner__form input {
+  width: 100%;
   margin-bottom: 20px;
   padding: 10px;
   font-size: 20px;
@@ -275,4 +278,25 @@ body {
 }
 .banner__form input:last-child {
   margin-bottom: 0
+}
+.banner__btn {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%,0);
+  transform: translate(-50%,0);
+  padding: 15px 20px;
+  background-color: #fff;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 20px;
+  border-radius: 5px;
+  border: inherit;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: .15s ease-in;
+  transition: .15s ease-in
+}
+.banner__btn:hover {
+  background-color: #0f4786;
+  border: 1px solid #fff;
+  color: #fff
 }

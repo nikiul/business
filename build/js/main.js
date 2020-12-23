@@ -1,3 +1,4 @@
+//header
 $(".banner").vegas({
     cover: true,
     timer: false,
@@ -6,4 +7,3 @@ $(".banner").vegas({
         { src: "img/1.jpg" } 
     ]
 });
-//header
