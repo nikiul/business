@@ -170,7 +170,7 @@ body {
 }
 .banner {
   padding: 100px 0;
-  height: 80vh;
+  height: 100vh;
   width: 100%
 }
 .banner__content {
@@ -198,16 +198,18 @@ body {
   margin-top: 20px
 }
 .banner__item {
-  margin: 0 0 30px;
+  margin: 0 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex
 }
+.banner__item:last-child {
+  margin-bottom: 0
+}
 .banner__item p {
   margin: 0;
   color: #fff;
-  font-size: 20px;
-  line-height: 25px
+  font-size: 20px
 }
 .banner__svg {
   display: -webkit-box;
@@ -298,5 +300,77 @@ body {
 .banner__btn:hover {
   background-color: #0f4786;
   border: 1px solid #fff;
+  color: #fff
+}
+.advantages {
+  padding: 50px 0
+}
+.advantages__title {
+  text-align: center;
+  margin: 0 0 40px;
+  font-size: 40px;
+  line-height: 45px;
+  color: #105bb0
+}
+.advantages__title span {
+  color: #000
+}
+.advantages__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+.advantages__item {
+  width: 30%;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.advantages__item:last-child {
+  margin-right: 0
+}
+.advantages__item p {
+  text-align: center;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000
+}
+.avantages__circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  background-color: #105bb0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in
+}
+.avantages__circle:hover {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px)
+}
+.avantages__circle svg {
+  width: 60px;
+  height: 60px;
   color: #fff
 }
