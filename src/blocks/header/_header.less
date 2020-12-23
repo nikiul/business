@@ -1,0 +1,159 @@
+//header
+.header {
+    max-width:100%;
+}
+
+// -------- header__nav --------
+.header__nav {
+    background-color: #105bb0;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item {
+   color:#ffffff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+
+   
+}
+
+.nav__link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.1s ease-in;
+    font-size: 16px;
+
+    &:hover {
+        color: #a8cdfd;
+    }
+}
+// -------- header__nav --------
+
+// -------- header__main--------
+.header__main {
+    padding: 15px 0;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.main__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.main__logo {
+    display: flex;
+    align-items: center;
+}
+
+.main__logo-img {
+    margin-right: 10px;
+}
+
+.main__title {
+    margin: 0;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    line-height: 40px;
+    font-size: 20pt;
+
+    span {
+        color: #105bb0;
+    }
+}
+
+.main__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    
+}
+
+.main__item {
+    display: flex;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    svg {
+        margin-right: 5px;
+        width: 24px;
+        fill: #105bb0;
+        color: #105bb0;
+    }
+
+    p {
+        margin: 0;
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.main__check {
+    position: relative;
+    margin-right: 5px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -32px;
+        width: 12px;
+        height: 19px;
+        border-right: 7px solid #105bb0;
+        border-bottom: 7px solid #105bb0;
+        transform: rotate(45deg);
+    }
+}
+
+.main__contacts {
+    display: flex;
+    flex-direction: column;
+
+    a {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 5px;
+        color: #105bb0;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        transition: color 0.2s ease-in;
+        
+        &:hover {
+            color:#0f4786;
+        }
+
+        img {
+            margin-right: 5px;
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    p {
+        margin: 0;
+        font-size: 15px;
+        line-height: 24px;
+    }
+}
+
+// -------- header__main--------
