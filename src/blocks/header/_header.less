@@ -5,7 +5,7 @@
 
 // -------- header__nav --------
 .header__nav {
-    background-color: #105bb0;
+    background-color: @main-color;
 }
 
 .nav__list {
@@ -20,8 +20,6 @@
    color:#ffffff;
    padding-top: 10px;
    padding-bottom: 10px;
-
-   
 }
 
 .nav__link {
@@ -68,6 +66,7 @@
     font-weight: normal;
     line-height: 40px;
     font-size: 20pt;
+    text-transform: uppercase;
 
     span {
         color: #105bb0;
@@ -92,8 +91,8 @@
     svg {
         margin-right: 5px;
         width: 24px;
-        fill: #105bb0;
-        color: #105bb0;
+        fill: @main-color;
+        color: @main-color;
     }
 
     p {
@@ -117,8 +116,8 @@
         left: -32px;
         width: 12px;
         height: 19px;
-        border-right: 7px solid #105bb0;
-        border-bottom: 7px solid #105bb0;
+        border-right: 7px solid @main-color;
+        border-bottom: 7px solid @main-color;
         transform: rotate(45deg);
     }
 }
@@ -132,7 +131,7 @@
         align-items: center;
         margin: 0;
         margin-bottom: 5px;
-        color: #105bb0;
+        color: @main-color;
         text-decoration: none;
         font-size: 16px;
         font-weight: bold;
