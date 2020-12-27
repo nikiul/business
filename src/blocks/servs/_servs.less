@@ -5,6 +5,7 @@
 
 .servs__title {
     margin: 0;
+    margin-bottom: 30px;
     text-align: center;
     font-size: 34px;
     text-transform: uppercase;
@@ -15,6 +16,7 @@
 .servs__card-wrap {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 .servs__card {
@@ -56,29 +58,51 @@
     background-color: @main-color;
     text-decoration: none;
     text-align: center;
+    border: 1px solid transparent;
     color: #fff;
     transition: all 300ms ease;
 
-    &:before{
-        position: absolute;
-        content: '';
-        width: 0%; height: 100%;
-        background: #4A90E2;
-        top: 0;  left: auto; right: 0;
-        z-index: -1;
-        transition: all 300ms ease;
+    &:hover {
+        background-color: #fff;
+        border: 1px solid @main-color;
+        color: @main-color;
     }
+
+    // &:before{
+    //     position: absolute;
+    //     content: '';
+    //     width: 0%; height: 100%;
+    //     background: #4A90E2;
+    //     top: 0;  left: auto; right: 0;
+    //     z-index: -1;
+    //     transition: all 300ms ease;
+    // }
       
-    &:hover{
-    color: white; 
-    box-shadow:none;
-    &:before{
-        position: absolute;
-        content: '';
-        width: 100%; height: 100%;
-        background: #4A90E2;
-        top: 0; left: 0; right: 0;
-        z-index: -1;
+    // &:hover{
+    //     color: white; 
+    //     box-shadow:none;
+
+    //     &:before{
+    //         position: absolute;
+    //         content: '';
+    //         width: 100%; height: 100%;
+    //         background: #4A90E2;
+    //         top: 0; left: 0; right: 0;
+    //         z-index: -1;
+    //     }
+    // }
+}
+
+.servs__desc {
+    text-align: center;
+
+    p {
+        margin: 0;
+        margin-bottom: 20px;
+        font-size: 14px;
+
+        &:last-child {
+            margin-bottom: 0;
         }
     }
 }
